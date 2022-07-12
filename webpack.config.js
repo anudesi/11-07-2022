@@ -14,5 +14,8 @@ module.exports= {
             {test:/\.scss$/, use:['style-loader','css-loader','sass-loader']},
         ]
     },
+    devServer: {
+        hot:true,
+    },
     plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
 }
