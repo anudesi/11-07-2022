@@ -1,3 +1,5 @@
+import "./css/style.css"
+import "./css/style.scss"
 import {sum} from "./math.js"
 import {number1,number2,result} from "./variables.js"
 

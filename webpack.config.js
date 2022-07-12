@@ -8,5 +8,11 @@ module.exports= {
         filename: 'bundle.js',
     },
     mode: "development",
+    module: {
+        rules: [ 
+            {test:/\.css$/, use:['style-loader','css-loader']},
+            {test:/\.scss$/, use:['style-loader','css-loader','sass-loader']},
+        ]
+    },
     plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
 }
